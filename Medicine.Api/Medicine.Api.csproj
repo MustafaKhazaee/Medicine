@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<RootNamespace>Medicine.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Medicine.Application\Medicine.Application.csproj" />
+    <ProjectReference Include="..\Medicine.Domain\Medicine.Domain.csproj" />
+    <ProjectReference Include="..\Medicine.Infrastructure\Medicine.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
