@@ -1,8 +1,8 @@
 ﻿
 using Medicine.Domain.Common;
 using Medicine.Domain.Entities;
-using Medicine.Domain.Interfaces;
 using Microsoft.AspNetCore.Http;
+using Medicine.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Medicine.Infrastructure.Persistence;
@@ -22,28 +22,26 @@ public class ApplicationDbContext (DbContextOptions options, IHttpContextAccesso
 
     public override int SaveChanges()
     {
-        ChangeTracker.Entries<AuditableEntity>()
-                     .Where(c => c.State == EntityState.Added)
-                     .Select(entry =>
-                     {
-                         entry.Entity.CreationDate = DateTime.Now;
-                         entry.Entity.CreatedBy = _httpContextAccessor?.HttpContext?.User?.Identity?.Name ?? "Default User";
-                         return entry;
-                     });
+        var addedEntities = ChangeTracker.Entries<AuditableEntity>().Where(c => c.State == EntityState.Added);
+
+        foreach (var entry in addedEntities)
+        {
+            entry.Entity.CreationDate = DateTime.UtcNow;
+            entry.Entity.CreatedBy = _httpContextAccessor?.HttpContext?.User?.Identity?.Name ?? "Default User";
+        }
 
         return base.SaveChanges();
     }
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
-        ChangeTracker.Entries<AuditableEntity>()
-                     .Where(c => c.State == EntityState.Added)
-                     .Select(entry =>
-                     {
-                         entry.Entity.CreationDate = DateTime.Now;
-                         entry.Entity.CreatedBy = _httpContextAccessor?.HttpContext?.User?.Identity?.Name ?? "Default User";
-                         return entry;
-                     });
+        var addedEntities = ChangeTracker.Entries<AuditableEntity>().Where(c => c.State == EntityState.Added);
+
+        foreach (var entry in addedEntities)
+        {
+            entry.Entity.CreationDate = DateTime.UtcNow;
+            entry.Entity.CreatedBy = _httpContextAccessor?.HttpContext?.User?.Identity?.Name ?? "Default User";
+        }
 
         return base.SaveChangesAsync(cancellationToken);
     }

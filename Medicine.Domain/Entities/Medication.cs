@@ -8,9 +8,9 @@ public class Medication : AuditableEntity
 {
     private Medication() { }
 
-    public required string Name { get; set; }
-    public required int Quantity { get; set; }
-    public required MedicationType MedicationType { get; set; }
+    public string Name { get; set; }
+    public int Quantity { get; set; }
+    public MedicationType MedicationType { get; set; }
 
     public static Medication Create (string name, int quantity, MedicationType medicationType)
         => new ()
