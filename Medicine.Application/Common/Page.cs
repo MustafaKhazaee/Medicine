@@ -3,17 +3,17 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Medicine.Application.Common;
 
-public class Page<T>
+public record Page<T>
 {
     private Page() { }
 
-    public List<T> Data { get; set; }
-    public int PageSize { get; set; }
-    public int PageNumber { get; set; }
-    public int TotalPages { get; set; }
-    public int TotalRecords { get; set; }
-    public bool HasNextPage { get; set; }
-    public bool HasPreviousPage { get; set; }
+    public List<T> Data { get; private init; }
+    public int PageSize { get; private init; }
+    public int PageNumber { get; private init; }
+    public int TotalPages { get; private init; }
+    public int TotalRecords { get; private init; }
+    public bool HasNextPage { get; private init; }
+    public bool HasPreviousPage { get; private init; }
 
     public async static Task<Page<T>> CreateAsync(IQueryable<T> queryable, int pageSize, int pageNumber, CancellationToken cancellationToken = default)
     {
