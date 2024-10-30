@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{60D27F3E-C83
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{16D2655E-85B4-47F7-9439-671EBF64139F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medicine.Domain", "Medicine.Domain\Medicine.Domain.csproj", "{A0D5694B-8F1A-4473-9EDB-DAA764C4CA6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medicine.Domain", "Medicine.Domain\Medicine.Domain.csproj", "{A0D5694B-8F1A-4473-9EDB-DAA764C4CA6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medicine.Application", "Medicine.Application\Medicine.Application.csproj", "{34D81009-F90C-4FCE-96BB-D7AADD4DDD79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medicine.Application", "Medicine.Application\Medicine.Application.csproj", "{34D81009-F90C-4FCE-96BB-D7AADD4DDD79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medicine.Infrastructure", "Medicine.Infrastructure\Medicine.Infrastructure.csproj", "{B030FC1C-BEA2-4E4A-8F18-B11901B4F7E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medicine.Infrastructure", "Medicine.Infrastructure\Medicine.Infrastructure.csproj", "{B030FC1C-BEA2-4E4A-8F18-B11901B4F7E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medicine.Api", "Medicine.Api\Medicine.Api.csproj", "{9E12A998-5958-4073-BA99-80C6A161713E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medicine.Api", "Medicine.Api\Medicine.Api.csproj", "{9E12A998-5958-4073-BA99-80C6A161713E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medicine.UnitTests", "Medicine.UnitTests\Medicine.UnitTests.csproj", "{C0C36EAF-24C8-4744-BCBB-F40DE96F5D79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{9E12A998-5958-4073-BA99-80C6A161713E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E12A998-5958-4073-BA99-80C6A161713E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E12A998-5958-4073-BA99-80C6A161713E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C36EAF-24C8-4744-BCBB-F40DE96F5D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C36EAF-24C8-4744-BCBB-F40DE96F5D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C36EAF-24C8-4744-BCBB-F40DE96F5D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C36EAF-24C8-4744-BCBB-F40DE96F5D79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{34D81009-F90C-4FCE-96BB-D7AADD4DDD79} = {60D27F3E-C839-49D9-BB22-5727284EE1E3}
 		{B030FC1C-BEA2-4E4A-8F18-B11901B4F7E4} = {60D27F3E-C839-49D9-BB22-5727284EE1E3}
 		{9E12A998-5958-4073-BA99-80C6A161713E} = {60D27F3E-C839-49D9-BB22-5727284EE1E3}
+		{C0C36EAF-24C8-4744-BCBB-F40DE96F5D79} = {16D2655E-85B4-47F7-9439-671EBF64139F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB26E1E2-F967-465F-AAF7-43ED80F6EECF}
