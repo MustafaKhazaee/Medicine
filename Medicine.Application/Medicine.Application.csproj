@@ -6,8 +6,8 @@
     <Nullable>enable</Nullable>
 	<RootNamespace>Medicine.Application</RootNamespace>
 	<Authors>Mustafa Khazaee</Authors>
-	<AssemblyVersion>1.10.305.1</AssemblyVersion>
-	<FileVersion>1.10.305.1</FileVersion>
+	<AssemblyVersion>1.10.305.2</AssemblyVersion>
+	<FileVersion>1.10.305.2</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

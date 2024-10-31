@@ -6,8 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
 	<RootNamespace>Medicine.Api</RootNamespace>
 	<Authors>Mustafa Khazaee</Authors>
-	<AssemblyVersion>1.10.305.5</AssemblyVersion>
-	<FileVersion>1.10.305.5</FileVersion>
+	<AssemblyVersion>1.10.305.6</AssemblyVersion>
+	<FileVersion>1.10.305.6</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
