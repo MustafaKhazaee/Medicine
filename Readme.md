@@ -1,6 +1,8 @@
-Version: 1.10.305.2
-PublishedOn: 2024-10-31 08:47:26
----------------------------------------------------------------------------------
-Version: 1.10.305.3
-PublishedOn: 2024-10-31 08:49:47
+Application Name: Medicine App REST API
+Author: Mustafa Khazaee
+
+Build Version History:
+
+Version: 1.10.305.8
+PublishedOn: 2024-10-31 09:03:43
 ---------------------------------------------------------------------------------

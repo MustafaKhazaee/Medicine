@@ -6,8 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
 	<RootNamespace>Medicine.Api</RootNamespace>
 	<Authors>Mustafa Khazaee</Authors>
-	<AssemblyVersion>1.10.305.6</AssemblyVersion>
-	<FileVersion>1.10.305.6</FileVersion>
+	<AssemblyVersion>1.10.305.8</AssemblyVersion>
+	<FileVersion>1.10.305.8</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,9 +26,9 @@
   </ItemGroup>
 
 	<Target Name="Versioning" AfterTargets="Publish">
-		<Exec Command="echo Version: $(AssemblyVersion)&gt;&gt; Readme.md" />
-		<Exec Command="echo PublishedOn: $([System.DateTime]::Now.ToString(&quot;yyyy-MM-dd hh:mm:ss&quot;))&gt;&gt; Readme.md" />
-		<Exec Command="echo ---------------------------------------------------------------------------------&gt;&gt; Readme.md" />
+		<Exec Command="echo Version: $(AssemblyVersion)&gt;&gt; ..\Readme.md" />
+		<Exec Command="echo PublishedOn: $([System.DateTime]::Now.ToString(&quot;yyyy-MM-dd hh:mm:ss&quot;))&gt;&gt; ..\Readme.md" />
+		<Exec Command="echo ---------------------------------------------------------------------------------&gt;&gt; ..\Readme.md" />
 	</Target>
 	
 </Project>
