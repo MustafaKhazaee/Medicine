@@ -5,6 +5,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	<RootNamespace>Medicine.Application</RootNamespace>
+	<Authors>Mustafa Khazaee</Authors>
+	<AssemblyVersion>1.10.305.1</AssemblyVersion>
+	<FileVersion>1.10.305.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

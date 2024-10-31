@@ -5,6 +5,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 	<RootNamespace>Medicine.Api</RootNamespace>
+	<Authors>Mustafa Khazaee</Authors>
+	<AssemblyVersion>1.10.305.5</AssemblyVersion>
+	<FileVersion>1.10.305.5</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,4 +25,10 @@
     <ProjectReference Include="..\Medicine.Infrastructure\Medicine.Infrastructure.csproj" />
   </ItemGroup>
 
+	<Target Name="Versioning" AfterTargets="Publish">
+		<Exec Command="echo Version: $(AssemblyVersion)&gt;&gt; Readme.md" />
+		<Exec Command="echo PublishedOn: $([System.DateTime]::Now.ToString(&quot;yyyy-MM-dd hh:mm:ss&quot;))&gt;&gt; Readme.md" />
+		<Exec Command="echo ---------------------------------------------------------------------------------&gt;&gt; Readme.md" />
+	</Target>
+	
 </Project>
